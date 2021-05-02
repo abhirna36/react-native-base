@@ -1,0 +1,55 @@
+{
+  "name": "tapplent",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "reinstall": "rm -rf node_modules yarn.lock package.lock && yarn install && cd ios && pod deintegrate && pod install && cd ../",
+    "lint": "eslint src/**/*.js"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^5.8.0",
+    "@react-navigation/drawer": "^5.12.5",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+    "axios": "^0.20.0",
+    "moment": "^2.29.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-device-info": "^8.1.2",
+    "react-native-gesture-handler": "~1.8.0",
+    "react-native-image-picker": "2.3.4",
+    "react-native-material-menu": "^1.2.0",
+    "react-native-popup-menu": "^0.15.10",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "^3.1.7",
+    "react-native-screens": "~2.15.0",
+    "react-native-unimodules": "~0.12.0",
+    "react-native-vector-icons": "^7.1.0",
+    "react-native-web": "~0.13.12",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "react-native-pager-view": "^5.1.5",
+    "native-base": "^2.15.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-jest": "~25.2.6",
+    "eslint": "^7.25.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "jest": "~25.2.6",
+    "react-test-renderer": "~16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
